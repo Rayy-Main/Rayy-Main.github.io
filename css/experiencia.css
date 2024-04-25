@@ -1,0 +1,108 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia .subtitulo {
+ color: #E0E0E0;;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;  /*ch é o caractere do tamanho 0 e ai você consegue limitar o tamanho dela na horizontal para não expandir mto*/
+  margin-bottom: 60px;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 10px 20px;
+  background: #F0F0F0;
+  position: relative;
+}
+.empresa::before {
+content: "";
+display: block;
+width: 4px;
+height: 20px;
+left: -4px;
+top: 20px;
+background: linear-gradient(#B6F829, #67DD0A);
+position: absolute;
+}
+
+.empresa-ano {
+  content: "";
+  top: 20px;
+  left: -100px;
+  position: absolute;
+  color: #525252;
+  width: 80px;
+  text-align: right;
+  /*para conseguir alinhar para a direita usei o width pro tamanho do conteudo ficar maior, só assim conseguimmos alinhar a direita, porque se deixar o conteudo com o tamanho normal ele não tem espaço para alinhar em  nenhum sentido*/
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1rem;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 10px;
+
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  padding: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    
+  }
+
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .empresa-texto {
+    font-size: 1rem,;
+  }
+
+  .empresa-ano {
+    position: initial;
+    width: initial;
+    order: 1;
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 400px){
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}

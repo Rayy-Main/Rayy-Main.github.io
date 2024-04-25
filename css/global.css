@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  color: #141414;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /*para a img não esticar qnd diminuir a pagina*/
+  display: block;
+}
+
+
+/*como essa classe vai ser usada para definir mais que um, por isso ela vai no global, exemplo texto experiencia e formacao*/
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch; /*ch é o caractere do tamanho 0*/
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    word-break: initial !important;
+    font-size: 4rem;
+    text-transform: capitalize;
+  }
+}
+
