@@ -5,7 +5,8 @@ O objetivo do projeto é realizar um Portifólio/CV online com informações de 
 e experiências profissionais, usando tecnologias simples com o HTML5 e CSS3 englobando os conceitos de: 
 como estruturar um layout, com  semânticas e técnicas de containers, como posicionar elementos em 
 display FlexBox e Grid. Aplicação de MediaQuerie para uma p[agina web reponsivo, acessibilidade, Git,  
-GitHub, NPM, Cleancss e fonts
+GitHub, NPM, Cleancss e fonts.
+
 
 ✅Tecnologias usadas:
 ➡️HTML5
@@ -15,6 +16,9 @@ GitHub, NPM, Cleancss e fonts
 ➡️NPM
 ➡️Cleancss
 ➡️GitHub
+
+⚠️OBS: Todo o conteúdo descritivo foi criado para o desenvolvimento do mesmo.
+
 
 💁‍♀️Autora:
 Rayanne Lopes Vieira
